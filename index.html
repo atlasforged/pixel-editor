@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+    <title>Pixel Art Editor</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="canvas-container">
+        <div id="grid"></div>
+        <canvas width="550" height="550" id="canvas""></canvas>
+        </div>
+        
+        
+        <div class=" ui">
+          <div>
+            <input type="color" name="colorInput" id="colorInput">
+          </div>
+    
+          <div>
+            <input type="checkbox" name="toggleErase" id="toggleErase">
+            <label for="toggleErase">Erase</label>
+    
+          </div>
+    
+          <div>
+            <input type="checkbox" name="toggleGrid" id="toggleGrid">
+            <label for="toggleGrid">Grid</label>
+    
+          </div>
+    
+          <div>
+            <button type="button" id="clear-btn">Clear</button>
+          </div>
+      </div>
+    </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,68 @@
+body {
+  min-height: 100vh;
+  background-color: rgb(170, 164, 164);
+  display: flex;
+  box-sizing: border-box;
+  gap: 4px;
+  font-family: "Suse";
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 48px;
+}
+
+.ui {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 26px;
+  font-size: large;
+}
+
+input,
+button:hover {
+  cursor: pointer;
+}
+input[type="checkbox"] {
+  transform: scale(1.5);
+}
+
+#colorInput {
+  border: none;
+  background-color: rgb(170, 164, 164);
+  height: 50px;
+  width: 50px;
+}
+
+#clear-btn {
+  border-radius: 4px;
+  font-size: large;
+  border: solid 1px rgb(134, 174, 226);
+  padding: 3px 6px;
+  background-color: lightsteelblue;
+  font-family: "Suse";
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+}
+
+#clear-btn:hover {
+  background-color: lightslategray;
+}
+
+#canvas {
+  cursor: crosshair;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+}
+
+#grid {
+  display: grid;
+  pointer-events: none;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#grid div {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
